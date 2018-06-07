@@ -1,0 +1,250 @@
+﻿<style type="text/css">.popup-win { }</style>
+<div class="nano">
+    <div class="nano-content">
+        <ul id="mainnav-menu" class="list-group">
+            <li class="list-header" style="display: none;">Navigation</li>
+            <li class="active-link">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i>
+                    <span class="menu-title">
+                        <strong class="aLink" data-link="../pages/landing.html">Dashboard</strong>
+                        <span class="label label-success pull-right">Top</span>
+                    </span>
+                </a>
+            </li>
+            <li class="list-divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog fa-fw fa"></i>
+                    <span class="menu-title">
+                        <strong>Site Admin</strong>
+                    </span>
+                    <i class="arrow"></i>
+                </a>
+                <ul class="collapse">
+                    <li>
+                        <a class="aLink" data-link="../pages/review-logs.html">Review Logs</a>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li>
+                        <a class="aLink" data-link="../pages/product-config.html">Product Config</a>
+                    </li>
+                    <li>
+                        <a class="aLink" data-link="../pages/db-config.html">DB Config</a>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li>
+                        <a class="aLink" data-link="../pages/lic-details.html">License Details</a>
+                    </li>
+                    <li>
+                        <a class="aLink" data-link="../pages/pseudo-code.html">Pseudo Code</a>
+                    </li>
+                    <li class="list-divider"> </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sticky-note"></i><span class="menu-title"> Reports </span><i class="arrow"></i>
+                        </a>
+                        <ul class="collapse">
+                            <li>
+                                <a class="aLink" data-link="../pages/user-activity-report.html?opt=1">User Activity Report</a>
+                            </li>
+                            <li>
+                                <a class="aLink" data-link="../pages/missing-entities-report.html?opt=2">Missing Entities Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-plug"></i>
+                    <span class="menu-title">
+                        <strong>Client Admin</strong>
+                    </span>
+                    <i class="arrow"></i>
+                </a>
+                <ul class="collapse">
+                    <li>
+                        <a class="aLink" data-link="../pages/user-management.html">User Management</a>
+                    </li>
+                    <li>
+                        <a class="aLink" data-link="../pages/activity-audit.html">Activity Audit</a>
+                    </li>
+                    <li style="display: none;"><a class="aLink" data-link="../pages/loc-report.html">LoC Report</a></li>
+                </ul>
+            </li>
+            <li class="list-divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="menu-title">Project Admin</span>
+                    <i class="arrow"></i>
+                </a>
+                <ul class="collapse">
+                    <li>
+                        <a href="javascript: leftMenu.goToPage('../pages/upload-project.html');">Submit New Project</a>
+                    </li>
+                    <li>
+                        <a class="aLink" data-link="../pages/load-projects.html">Load Project Workspace</a>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li>
+                        <a class="aLink" data-link="../pages/view-rules.html">View Functions Catalog</a>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li>
+                        <a class="aLink" data-link="../pages/task-queue.html">
+                            <span class="menu-title">
+                                <strong>Task Queue</strong>
+                                <span class="pull-right badge badge-warning" id="cntTaskQueue"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                    <span class="menu-title"> Search</span>
+                    <i class="arrow"></i>
+                </a>
+                <ul class="collapse">
+                    <li>
+                        <a href="#" id="aQueryConsole">
+                            <span class="menu-title">Keyword Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="popup-win" data-link="../pages/object-search.html" href="#">Object Search</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-gift"></i><span class="menu-title"> Inventory</span><i class="arrow"></i>
+                </a>
+
+                <ul class="collapse">
+                    <li>
+                        <a href="javascript:showPortfolioDialog()">Overall Workflow</a>
+                    </li>
+                    <li>
+                        <a href="javascript:showPortfolioDialogConnectivity()">Overall Connectivity</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-divider"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sticky-note"></i><span class="menu-title"> Reports </span><i class="arrow"></i>
+                </a>
+
+                <ul class="collapse">
+                    <li>
+                        <a class="aLink" data-link="../pages/report.html?opt=1">Inventory Report</a>
+                    </li>
+                    <li>
+                        <a class="aLink" data-link="../pages/report.html?opt=3">Workflows Report</a>
+                    </li>
+                    <li class="list-divider"></li>
+                    <li>
+                        <a class="aLink" data-link="../pages/report.html?opt=2">Progress Report </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="list-divider"></li>
+            <li>
+                <a class="aLink" data-link="../pages/custom-requirements.html">
+                    <i class="fa fa-file-word-o"></i><span class="menu-title"> Custom Impacts </span>
+                </a>
+            </li>
+            <li></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cogs"></i>
+                    <span class="menu-title"> Work Product</span>
+                    <i class="arrow"></i>
+                </a>
+
+                <ul class="collapse">
+                    <li>
+                        <a href="javascript: addSystemDescription();">System Description</a>
+                    </li>
+                    <li>
+                        <a href="javascript: showDictionaryDialog()">Object Dictionary</a>
+                    </li>
+
+                    <li class="list-divider"></li>
+                    <li>
+                        <a href="javascript: showCustomWorkflow();">Custom Workflow</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-divider"></li>
+            <li class="list-header">OTHER</li>
+            <li>
+                <a href="../pages/my-profile.html">
+                    <i class="fa fa-th"></i>
+                    <span class="menu-title">
+                        My Profile
+                        <span class="label label-mint pull-right">New</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <div class="mainnav-widget">
+            <div class="show-small">
+                <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
+                    <i class="fa fa-desktop"></i>
+                </a>
+            </div>
+            <div id="demo-wg-server" class="hide-small mainnav-widget-content">
+                <ul class="list-group">
+                    <li class="list-header pad-no pad-ver">Product Status</li>
+                    <li class="mar-btm">
+                        <span class="label label-purple pull-right">75%</span>
+                        <p>License Period</p>
+                        <div class="progress progress-sm">
+                            <div class="progress-bar progress-bar-purple" style="width: 75%;">
+                                <span class="sr-only">75%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pad-ver">
+                        <a href="../pages/lic-details.html" class="btn btn-success">View Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="show-fixed pull-right">
+        <ul class="footer-list list-inline">
+            <li>
+                <p class="text-sm">Approved Users</p>
+                <div class="progress progress-sm progress-light-base">
+                    <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+                </div>
+            </li>
+            <li>
+                <p class="text-sm">INTELLI Discovery Jobs Status</p>
+                <div class="progress progress-sm progress-light-base">
+                    <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+                </div>
+            </li>
+            <li>
+                <button class="btn btn-sm btn-dark btn-active-success">View Task Queue</button>
+            </li>
+        </ul>
+    </div>
+    <div class="hide-fixed pull-right pad-rgt">Currently v1.1.1</div>
+    <p class="pad-lft">
+        © 2017 FloKapture Solutions. All Rights Reserved.
+    </p>
+</footer>
